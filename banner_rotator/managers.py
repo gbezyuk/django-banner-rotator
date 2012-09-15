@@ -1,7 +1,6 @@
 #-*- coding:utf-8 -*-
 
 from datetime import datetime
-from decimal import Decimal
 from random import random
 
 from django.db import models
@@ -17,10 +16,8 @@ def pick(bias_list):
     #   an items weight is equivalent to it's probability of being picked
     assert sum(i[1] for i in bias_list) == 1
 
-    # Django ORM returns floats as Decimals,
-    #   so we'll convert floats to decimals here to co-operate
-    number = Decimal("%.18f" % random())
-    current = Decimal(0)
+    number = random()
+    current = 0
 
     # With help from
     #   @link http://fr.w3support.net/index.php?db=so&id=479236
