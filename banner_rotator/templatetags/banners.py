@@ -1,18 +1,12 @@
-#-*- coding:utf-8 -*-
-
 import logging
-
 from django import template
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext_lazy as _
-
 from banner_rotator.models import Banner, Place
-
 
 logger = logging.getLogger('banner_rotator')
 
 register = template.Library()
-
 
 class BannerNode(template.Node):
     def __init__(self, place_slug, varname=None):
@@ -50,7 +44,7 @@ class BannerNode(template.Node):
 @register.tag
 def banner(parser, token):
     """
-    Use: {% banner place-slug as banner %} or {% banner place-slug %}
+    Usage: {% banner place-slug as banner %} or {% banner place-slug %}
     """
     bits = token.contents.split()
 

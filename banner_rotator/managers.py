@@ -1,5 +1,3 @@
-#-*- coding:utf-8 -*-
-
 from datetime import datetime
 from random import random
 
@@ -31,12 +29,12 @@ class BannerManager(models.Manager):
     def biased_choice(self, place):
         now = datetime.now()
 
-        # проверка условий:
-        # - активен и находится привязан к нужному месту
-        # - если задано время начало показа баннера
-        # - если задано время окончания показа баннера
-        # - если задано ограничение на количество показов
-        # - если задано ограничение на количество кликов
+        # conditions verification:
+        # - active and bounded to specified place
+        # - display start time restriction passes
+        # - display finish time restriction passes
+        # - max_views restriction passes
+        # - max_clicks restriction passes
         queryset = self.filter(is_active=True, places=place).\
                     filter(models.Q(start_at__isnull=True) | models.Q(start_at__lte=now)).\
                     filter(models.Q(finish_at__isnull=True) | models.Q(finish_at__gte=now)).\

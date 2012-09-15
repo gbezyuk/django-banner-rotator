@@ -1,5 +1,3 @@
-#-*- coding:utf-8 -*-
-
 from django.test import TestCase
 
-#todo написать тесты
+#todo cover with tests

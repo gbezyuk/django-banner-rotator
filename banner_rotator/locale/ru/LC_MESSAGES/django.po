@@ -2,169 +2,176 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-06-16 15:17+0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-09-15 14:56+0400\n"
+"PO-Revision-Date: 2012-09-15 14:58\n"
+"Last-Translator:   <admin@example.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Language: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"X-Translated-Using: django-rosetta 0.6.8\n"
+
+#: admin.py:40
+msgid "Primary"
+msgstr "Основные параметры"
 
 #: admin.py:43
-msgid "Main"
-msgstr "Основные"
+msgid "Displaying"
+msgstr "Параметры показов"
 
-#: admin.py:46
-msgid "Show"
-msgstr "Показ"
-
-#: admin.py:88 templates/admin/banner_rotator/banner/change_form.html:7
-#: templates/admin/banner_rotator/banner/object_log_clicks.html:11
-#, fuzzy
+#: admin.py:85 templates/admin/banner_rotator/banner/object_log_clicks.html:11
 msgid "Log clicks"
-msgstr "История кликов"
-
-#: models.py:11 models.py:24 models.py:59
-msgid "Name"
-msgstr "Имя"
-
-#: models.py:12
-msgid "Create at"
-msgstr "Создана"
+msgstr "Лог переходов"
 
 #: models.py:13
-msgid "Update at"
-msgstr "Обновлена"
+msgid "Banner_Rotator"
+msgstr "Управление Баннерами"
 
-#: models.py:16
+#: models.py:16 models.py:29 models.py:64
+msgid "name"
+msgstr "название"
+
+#: models.py:17
+msgid "created at"
+msgstr "создано"
+
+#: models.py:18
+msgid "updated at"
+msgstr "обновлено"
+
+#: models.py:21 models.py:61
 msgid "campaign"
 msgstr "компания"
 
-#: models.py:17
+#: models.py:22
 msgid "campaigns"
 msgstr "компании"
 
-#: models.py:25
-msgid "Slug"
-msgstr "Слот"
-
-#: models.py:26
-msgid "Width"
-msgstr "Ширина"
-
-#: models.py:27
-msgid "Height"
-msgstr "Высота"
+#: models.py:30
+msgid "slug"
+msgstr "slug (технический идентификатор)"
 
 #: models.py:31
+msgid "width"
+msgstr "ширина"
+
+#: models.py:32
+msgid "height"
+msgstr "высота"
+
+#: models.py:36 models.py:90
 msgid "place"
 msgstr "место"
 
-#: models.py:32
+#: models.py:37
 msgid "places"
 msgstr "места"
 
-#: models.py:47
+#: models.py:52
 msgid "Size"
 msgstr "Размер"
 
-#: models.py:52
-msgid "Current page"
-msgstr "Текущая страница"
+#: models.py:57
+msgid "current page"
+msgstr "текущем окне"
 
-#: models.py:53
-msgid "Blank page"
-msgstr "Новая страница"
+#: models.py:58
+msgid "blank page"
+msgstr "новом окне"
 
-#: models.py:56
-msgid "Campaign"
-msgstr "Компания"
-
-#: models.py:60
-msgid "Image alt"
-msgstr "Альт. текст"
-
-#: models.py:62
-msgid "URL"
-msgstr ""
-
-#: models.py:63
-msgid "Target"
-msgstr "Открывать на"
-
-#: models.py:65 models.py:148
-msgid "Views"
-msgstr "Просмотры"
-
-#: models.py:66 models.py:142
-msgid "Clicks"
-msgstr "Переходы"
+#: models.py:65
+msgid "image alternative text (alt)"
+msgstr "альтернативный или всплывающией текст для изображения"
 
 #: models.py:67
-msgid "Max views"
-msgstr "Максимальное число показов"
+msgid "URL"
+msgstr "адрес для перехода по клику на баннер (URL)"
 
 #: models.py:68
-msgid "Max clicks"
-msgstr "Максимальное число кликов"
+msgid "url target"
+msgstr "Открывать в"
 
-#: models.py:70
-msgid "Weight"
-msgstr "Вес"
+#: models.py:70 models.py:155
+msgid "views"
+msgstr "Просмотры"
 
-#: models.py:70
-msgid "A ten will display 10 times more often that a one."
-msgstr "Баннер со значением \"10\" будет показываться в 10 раз чаще, с \"1\"."
+#: models.py:71 models.py:149
+msgid "clicks"
+msgstr "Переходы"
+
+#: models.py:72
+msgid "max views"
+msgstr "максимальное число показов"
 
 #: models.py:73
-msgid "File"
-msgstr "Файл"
+msgid "max clicks"
+msgstr "максимальное число переходов"
 
-#: models.py:78
-msgid "Start at"
-msgstr "Начать с"
+#: models.py:75
+msgid "weight"
+msgstr "вес"
+
+#: models.py:75
+msgid ""
+"A banner with weight set to 10 will display 10 times more often that one "
+"with a weight set to 1."
+msgstr "Баннер со значением веса \"10\" будет показываться в 10 раз чаще, с \"1\"."
 
 #: models.py:79
-msgid "Finish at"
-msgstr "Прекратить с"
+msgid "file"
+msgstr "файл (основной)"
 
-#: models.py:81
+#: models.py:80
+msgid "hover file"
+msgstr "файл (при наведении курсора)"
+
+#: models.py:85
+msgid "start displaying at"
+msgstr "начать показы с"
+
+#: models.py:86
+msgid "finish displaying at"
+msgstr "закончить показы к"
+
+#: models.py:88
 msgid "Is active"
 msgstr "Активен"
 
-#: models.py:83
-#: templates/admin/banner_rotator/banner/object_log_clicks.html:24
-msgid "Place"
-msgstr "Место"
-
-#: models.py:88
+#: models.py:95
 msgid "banner"
 msgstr "баннер"
 
-#: models.py:89
+#: models.py:96
 msgid "banners"
 msgstr "баннеры"
 
 #: templates/admin/banner_rotator/banner/change_form.html:6
-msgid "History"
-msgstr ""
+msgid "history"
+msgstr "история"
+
+#: templates/admin/banner_rotator/banner/change_form.html:7
+msgid "clicks log"
+msgstr "Лог переходов"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:7
 msgid "Home"
-msgstr ""
+msgstr "Главная"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:23
 msgid "Date/time"
-msgstr ""
+msgstr "Дата/время"
+
+#: templates/admin/banner_rotator/banner/object_log_clicks.html:24
+msgid "Place"
+msgstr "Место"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:25
 msgid "User"
@@ -172,22 +179,54 @@ msgstr "Пользователь"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:26
 msgid "IP"
-msgstr ""
+msgstr "IP-адрес"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:27
 msgid "User Agent"
-msgstr ""
+msgstr "Браузер (User Agent)"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:28
 msgid "Referrer"
-msgstr ""
+msgstr "Источник (Referrer)"
 
 #: templates/admin/banner_rotator/banner/object_log_clicks.html:45
 msgid ""
 "This object doesn't have a clicks log. It probably wasn't added via this "
 "admin site."
 msgstr ""
+"У этого объекта нет лога переходов. Вероятно, он был создан не через "
+"административный сайт."
 
-#: templatetags/banners.py:58
+#: templatetags/banners.py:52
 msgid "banner tag takes three of four arguments"
 msgstr ""
+
+#~ msgid "Main"
+#~ msgstr "Основные"
+
+#~ msgid "Show"
+#~ msgstr "Показ"
+
+#~ msgid "Name"
+#~ msgstr "Имя"
+
+#~ msgid "Slug"
+#~ msgstr "Слот"
+
+#~ msgid "Campaign"
+#~ msgstr "Компания"
+
+#~ msgid "Image alt"
+#~ msgstr "Альт. текст"
+
+#~ msgid "Weight"
+#~ msgstr "Вес"
+
+#~ msgid "Start at"
+#~ msgstr "Начать с"
+
+#~ msgid "Finish at"
+#~ msgstr "Прекратить с"
+
+#~ msgid "File"
+#~ msgstr "Файл"

@@ -1,7 +1,4 @@
-#-*- coding:utf-8 -*-
-
 import logging
-
 from django import forms, template
 from django.contrib import admin
 from django.contrib.admin.util import unquote
@@ -40,10 +37,10 @@ class BannerAdmin(admin.ModelAdmin):
     list_filter = ('campaign', 'places', 'is_active')
     date_hierarchy = 'created_at'
     fieldsets = (
-        (_('Main'), {
+        (_('Primary'), {
             'fields': ('campaign', 'places', 'name', 'url', 'url_target', 'file', 'file_hover', 'alt'),
         }),
-        (_('Show'), {
+        (_('Displaying'), {
             'fields': ('weight', 'views', 'max_views', 'clicks', 'max_clicks', 'start_at', 'finish_at', 'is_active'),
         })
     )
@@ -97,7 +94,6 @@ class BannerAdmin(admin.ModelAdmin):
             "admin/%s/%s/object_log_clicks.html" % (app_label, opts.object_name.lower()),
             "admin/%s/object_log_clicks.html" % app_label,
         ], context, context_instance=context_instance)
-
 
 admin.site.register(Banner, BannerAdmin)
 admin.site.register(Campaign, CampaignAdmin)
