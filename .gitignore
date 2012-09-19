@@ -1,4 +1,7 @@
+env
 *.pyc
 *.pyo
 .DS_Store
 .idea
+atlassian-ide-plugin.xml
+**.sqlite3

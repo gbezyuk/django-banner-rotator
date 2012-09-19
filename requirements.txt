@@ -1,2 +1,5 @@
-django_extensions
 django>=1.4
+django_extensions
+PIL
+django-grappelli>=2.4
+django-filebrowser>=3.5
