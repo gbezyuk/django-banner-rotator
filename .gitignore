@@ -5,3 +5,4 @@ env
 .idea
 atlassian-ide-plugin.xml
 **.sqlite3
+**media/uploads**
